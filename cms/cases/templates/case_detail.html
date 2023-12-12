@@ -1,0 +1,16 @@
+<!-- case_detail.html -->
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="text-center mt-4">Case Detail</h2>
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">{{ case.title }}</h5>
+                <p class="card-text">{{ case.description }}</p>
+                <p class="card-text"><small class="text-muted">Timestamp: {{ case.timestamp }}</small></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
